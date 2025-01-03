@@ -25,8 +25,29 @@ Purpose: Generates passwords with maximum randomness using all available charact
 - Behavior: Passwords are generated using uppercase letters, lowercase letters, numbers, and symbols.
 Example: 9~Tk?me^AxB
 
+### All Characters
+Purpose: Generates passwords with maximum randomness using all available characters (letters, numbers, and symbols).
+Behavior:
+Passwords are generated using: Uppercase letters, Lowercase letters, Numbers and Symbols.
+Example: 9~Tk?me^AxB
+
 ### Custom
 Purpose: Gives the user full control over the password generation by allowing them to customize the character set via checkboxes.
 - Behavior: Passwords are generated based on the user-selected combination of character types. If no checkboxes are selected, no password is generated.
 Example: R@H#Y^Q!, 384720192
 
+## Instalation
+
+Follow these steps to set up and run the **Password Generator** on your computer:
+
+1. Download the repository.
+2. Open your terminal or command prompt.
+3. Navigate to the project directory.
+4. Run the application by clicking on run.py.
+
+
+## File Structure
+- run.py: Entry point to run the application.
+- gui.py: Defines the graphical user interface.
+- gui_functions.py: Contains core logic for password generation and functionality.
+- assets/: Directory for resources like the application icon.
