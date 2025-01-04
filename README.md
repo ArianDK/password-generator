@@ -54,7 +54,7 @@ Follow these steps to set up and run the **Password Generator** on your computer
 - gui_functions.py: Contains core logic for password generation and functionality.
 - assets/: Directory for resources like the application icon.
 
-## Truble Shooting
-- **Add PyInstaller to PATH** If you encounter the error `'pyinstaller' is not recognized as an internal or external command, operable program or batch file`, you need to add the PyInstaller directory to your system's PATH.
-- **Missing Dependencies** If the application fails due to missing dependencies, ensure all packages in `requirements.txt` are installed. Run `pip list` in the command prompt.
-- **Windows antivirus** If Windows antivirus blocks pyinstaller from turning the code into a standalone excecutable: Click the popup "Allow on device", then "Start action".
+## Troubleshooting
+- **Add PyInstaller to PATH**: If you encounter the error `'pyinstaller' is not recognized as an internal or external command, operable program or batch file`, you need to add the PyInstaller directory to your system's PATH.
+- **Missing Dependencies**: If the application fails due to missing dependencies, ensure all packages in `requirements.txt` are installed. Run `pip list` in the command prompt.
+- **Windows antivirus**: If Windows antivirus blocks pyinstaller from turning the code into a standalone excecutable: Click the popup "Allow on device", then "Start action".
