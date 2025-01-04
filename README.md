@@ -36,18 +36,23 @@ Purpose: Gives the user full control over the password generation by allowing th
 - Behavior: Passwords are generated based on the user-selected combination of character types. If no checkboxes are selected, no password is generated.
 Example: R@H#Y^Q!, 384720192
 
-## Instalation
+## Instalation (Create Standalone Executable)
+It is assumed that Python and pip are installed on your system.
 
 Follow these steps to set up and run the **Password Generator** on your computer:
 
-1. Download the repository.
-2. Open your terminal or command prompt.
-3. Navigate to the project directory.
-4. Run the application by clicking on run.py.
+1. Download the repository as a zip file and unzip it.
+2. Open your terminal or command prompt and navigate to the password generator directory by typing `cd path/to/your/directory/password-generator-main`.
+3. In the command prompt now type `pip install -r requirements.txt` then you should type `pyinstaller --onefile --noconsole --add-data "assets/icon.png;assets" --add-data "assets/icon.ico;assets" --hidden-import "ttkbootstrap" --icon "assets/icon.ico" --distpath . --specpath ./build "Password Generator.py"`
+4. Now the Password Generator.exe file should be in password-generator-main and you can run it.
 
 
 ## File Structure
-- run.py: Entry point to run the application.
+- Password Generator.py: Entry point to run the application.
 - gui.py: Defines the graphical user interface.
 - gui_functions.py: Contains core logic for password generation and functionality.
 - assets/: Directory for resources like the application icon.
+
+## Truble Shooting
+- If you encounter the error `'pyinstaller' is not recognized as an internal or external command, operable program or batch file`, you need to add the PyInstaller directory to your system's PATH.
+- If the application fails due to missing dependencies, ensure all packages in `requirements.txt` are installed. Run `pip list` in the command prompt.

@@ -1,4 +1,4 @@
-from password_generator import generate_password
+from password_generator_function import generate_password
 from tkinter.messagebox import showinfo
 
 # Track the last length and mode

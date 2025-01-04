@@ -1,3 +1,4 @@
+import os
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from tkinter.messagebox import showinfo
@@ -15,9 +16,14 @@ from gui_functions import (
 root = ttk.Window(themename="simplex")
 root.title("Password Generator")
 
-# Set the application icon
+# Set app icon
+# Get the absolute path to the directory where the script is located
+script_dir = os.path.abspath(os.path.dirname(__file__))
+
+# Combine the directory path with the icon file name
+icon_path = os.path.join(script_dir, "assets/icon.png")
 try:
-    root.iconphoto(False, ttk.PhotoImage(file="./assets/icon.png"))
+    root.iconphoto(False, ttk.PhotoImage(file=icon_path))
 except Exception as e:
     print(f"Failed to set icon: {e}")
 
@@ -111,8 +117,5 @@ numbers_check.grid(row=2, column=2, sticky="w", padx=5, pady=5)
 symbols_check = ttk.Checkbutton(customization_frame, text="Symbols", variable=symbols_var, command=lambda: update_password(password_var, password_length, mode_var, lowercase_var, uppercase_var, numbers_var, symbols_var, progress_bar))
 symbols_check.grid(row=2, column=3, sticky="w", padx=5, pady=5)
 
-# Initialize password and sync checkboxes on startup
-sync_checkboxes(mode_var, lowercase_var, uppercase_var, numbers_var, symbols_var, lowercase_check, uppercase_check, numbers_check, symbols_check, password_var, password_length, progress_bar)
 
-if __name__ == "__main__":
-    root.mainloop()
+sync_checkboxes(mode_var, lowercase_var, uppercase_var, numbers_var, symbols_var, lowercase_check, uppercase_check, numbers_check, symbols_check, password_var, password_length, progress_bar)
