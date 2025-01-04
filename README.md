@@ -43,7 +43,8 @@ Follow these steps to set up and run the **Password Generator** on your computer
 
 1. Download the repository as a zip file and unzip it.
 2. Open your terminal or command prompt and navigate to the password generator directory by typing `cd path/to/your/directory/password-generator-main`.
-3. In the command prompt now type `pip install -r requirements.txt` then you should type `pyinstaller --onefile --noconsole --add-data "assets/icon.png;assets" --add-data "assets/icon.ico;assets" --hidden-import "ttkbootstrap" --icon "assets/icon.ico" --distpath . --specpath ./build "Password Generator.py"`
+3. In the command prompt now type `pip install -r requirements.txt` to download the required packages.
+4. Now you should type `pyinstaller --onefile --noconsole --add-data "assets/icon.png;assets" --add-data "assets/icon.ico;assets" --hidden-import "ttkbootstrap" --icon "assets/icon.ico" --distpath . "Password Generator.py" & rmdir /s /q build & del "Password Generator.spec"` to install the Password Generator as a standalone executable.
 4. Now the Password Generator.exe file should be in password-generator-main and you can run it.
 
 
@@ -54,5 +55,6 @@ Follow these steps to set up and run the **Password Generator** on your computer
 - assets/: Directory for resources like the application icon.
 
 ## Truble Shooting
-- If you encounter the error `'pyinstaller' is not recognized as an internal or external command, operable program or batch file`, you need to add the PyInstaller directory to your system's PATH.
-- If the application fails due to missing dependencies, ensure all packages in `requirements.txt` are installed. Run `pip list` in the command prompt.
+- **Add PyInstaller to PATH** If you encounter the error `'pyinstaller' is not recognized as an internal or external command, operable program or batch file`, you need to add the PyInstaller directory to your system's PATH.
+- **Missing Dependencies** If the application fails due to missing dependencies, ensure all packages in `requirements.txt` are installed. Run `pip list` in the command prompt.
+- **Windows antivirus** If Windows antivirus blocks pyinstaller from turning the code into a standalone excecutable: Click the popup "Allow on device", then "Start action".
