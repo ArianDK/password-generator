@@ -3,6 +3,8 @@ A Python-based password generator with an intuitive GUI that allows users to cre
 
 
 ## Features
+<img src=".\assets\icon.png" width="150" align="right"/>
+
 - Predefined modes and a custom mode.
 - Password Length Customization: Adjust password length using a slider (1–50 characters).
 - Clipboard Copy: Copy the generated password with a single click.
@@ -14,27 +16,33 @@ A Python-based password generator with an intuitive GUI that allows users to cre
 ### Easy to Say
 - Purpose: Generates passwords that are easier to pronounce by alternating consonants and vowels.
 - Behavior: Passwords are composed only of letters (no numbers or symbols). Alternates between consonants and vowels for better readability.
-Example: gunevatalo
+- Example: gunevatalo
 
 ### Easy to Read
 - Purpose: Generates passwords that are less ambiguous by avoiding confusing characters (e.g., 1, l, 0, O).
 - Behavior: Passwords avoid ambiguous characters such as I, l, 0, O, 1. Includes a mix of uppercase, lowercase, and numbers but excludes symbols.
 Example: Trembing7ace
-All Characters
-Purpose: Generates passwords with maximum randomness using all available characters (letters, numbers, and symbols).
-- Behavior: Passwords are generated using uppercase letters, lowercase letters, numbers, and symbols.
-Example: 9~Tk?me^AxB
 
 ### All Characters
-Purpose: Generates passwords with maximum randomness using all available characters (letters, numbers, and symbols).
-Behavior:
-Passwords are generated using: Uppercase letters, Lowercase letters, Numbers and Symbols.
-Example: 9~Tk?me^AxB
+- Purpose: Generates passwords with maximum randomness using all available characters (letters, numbers, and symbols).
+- Behavior: Passwords are generated using uppercase letters, lowercase letters, numbers, and symbols.
+- Example: 9~Tk?me^AxB
 
 ### Custom
-Purpose: Gives the user full control over the password generation by allowing them to customize the character set via checkboxes.
+- Purpose: Gives the user full control over the password generation by allowing them to customize the character set via checkboxes.
 - Behavior: Passwords are generated based on the user-selected combination of character types. If no checkboxes are selected, no password is generated.
-Example: R@H#Y^Q!, 384720192
+- Example: R@H#Y^Q!, 384720192
+
+
+## Screenshots
+<div align="center">
+    <img src="./assets/screenshots/capture.png" alt="Screenshot 1" style="height: 500px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./assets/screenshots/capture2.png" alt="Screenshot 2" style="height: 500px;">
+</div>
+<div align="center">
+    <img src="./assets/screenshots/capture3.png" alt="Screenshot 3" style="height: 500px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./assets/screenshots/capture4.png" alt="Screenshot 4" style="height: 500px;">
+</div>
 
 ## Instalation (Create Standalone Executable)
 It is assumed that Python and pip are installed on your system.
@@ -48,13 +56,14 @@ Follow these steps to set up and run the **Password Generator** on your computer
 4. Now the Password Generator.exe file should be in password-generator-main and you can run it.
 
 
-## File Structure
-- Password Generator.py: Entry point to run the application.
-- gui.py: Defines the graphical user interface.
-- gui_functions.py: Contains core logic for password generation and functionality.
-- assets/: Directory for resources like the application icon.
-
 ## Troubleshooting
 - **Add PyInstaller to PATH**: If you encounter the error `'pyinstaller' is not recognized as an internal or external command, operable program or batch file`, you need to add the PyInstaller directory to your system's PATH.
 - **Missing Dependencies**: If the application fails due to missing dependencies, ensure all packages in `requirements.txt` are installed. Run `pip list` in the command prompt.
 - **Windows antivirus**: If Windows antivirus blocks pyinstaller from turning the code into a standalone excecutable: Click the popup "Allow on device", then "Start action".
+
+
+## File Structure
+- **Password Generator.py**: Entry point to run the application.
+- **gui.py**: Defines the graphical user interface.
+- **gui_functions.py**: Contains core logic for password generation and functionality.
+- **assets/**: Directory for resources like the application icon.
