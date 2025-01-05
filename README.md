@@ -49,6 +49,7 @@ Example: Trembing7ace
 It is assumed that Python and pip are installed on your system.
 
 Follow these steps to set up and run the **Password Generator** on your computer:
+<img src=".\assets\py-to-exe.png" width="300" align="right"/>
 
 1. Download the repository as a zip file and unzip it.
 2. Open your terminal or command prompt and navigate to the password generator directory by typing `cd path/to/your/directory/password-generator-main`.
