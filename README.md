@@ -36,12 +36,13 @@ Example: Trembing7ace
 
 ## Screenshots
 <div align="center">
-    <img src="./assets/screenshots/capture.png" alt="Screenshot 1" style="height: 500px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="./assets/screenshots/capture2.png" alt="Screenshot 2" style="height: 500px;">
+    <img src="./assets/screenshots/capture.png" alt="Screenshot 1" style="height: 300px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./assets/screenshots/capture2.png" alt="Screenshot 2" style="height: 300px;">
 </div>
+<p></p>
 <div align="center">
-    <img src="./assets/screenshots/capture3.png" alt="Screenshot 3" style="height: 500px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="./assets/screenshots/capture4.png" alt="Screenshot 4" style="height: 500px;">
+    <img src="./assets/screenshots/capture3.png" alt="Screenshot 3" style="height: 300px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="./assets/screenshots/capture4.png" alt="Screenshot 4" style="height: 300px;">
 </div>
 
 ## Instalation (Create Standalone Executable)
