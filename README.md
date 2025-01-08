@@ -46,7 +46,7 @@ Example: Trembing7ace
 </div>
 
 ## Instalation (Create Standalone Executable)
-It is assumed that Python and pip are installed on your system.
+It is assumed that Python and pip are installed on your system to the root directory.
 
 Follow these steps to set up and run the **Password Generator** on your computer:
 <img src=".\assets\py-to-exe.png" width="300" align="right"/>
